@@ -1,0 +1,2 @@
+# CustomConfig-util-
+ConfigConfingのutilです。
