@@ -1,5 +1,3 @@
-package <package>;
-
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.*;
@@ -30,7 +28,7 @@ public class CustomConfig extends YamlConfiguration
     public void saveDefault()
     {
         if(!plugin.getDataFolder().exists()) plugin.getDataFolder().mkdir();
-        if (!configFile.exists()) copyResource(plugin.getResource("config.yml"), configFile);
+        if (!configFile.exists()) copyResource(plugin.getResource(file), configFile);
     }
 
     public FileConfiguration getConfiguration()
