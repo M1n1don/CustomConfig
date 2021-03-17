@@ -19,7 +19,7 @@ public static CustomConfig getCustomConfig()
     return config;
 }
 ```  
-※ resourcesにconfig.ymlを作成してください。
+※ resourcesにconfig.ymlを作成してください。  
   config.yml内に記述したものはそのままplugins/<Plugin>/config.ymlとして出力されます。
 
 ## 他コンフィグの作成（例）  
