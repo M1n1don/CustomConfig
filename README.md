@@ -1,8 +1,38 @@
-# CustomConfig-util-
+# CustomConfig
 ConfigConfingのutilです。
 
-## 使い方  
-1. utilディレクトリに入れる。
-2. パッケージを記述
-3. リソースディレクトリ内にconfig.ymlを作成
-4. config.ymlを編集（コメント可）
+## コンフィグの作成  
+```java
+
+public static CustomConfig config;
+
+@Override
+public void onEnable()
+{
+    config = new CustomConfig(this); 
+    config.saveDefault();
+}
+
+public static CustomConfig getCustomConfig()
+{
+    return config;
+}
+```  
+
+## 他コンフィグの作成（例）  
+```java
+
+public static CustomConfig message;
+
+@Override
+public void onEnable()
+{
+    message = new CustomConfig(this, message); 
+    message.saveDefault();
+}
+
+public static CustomConfig getCustomMessage()
+{
+    return message;
+}
+```  
