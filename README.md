@@ -27,7 +27,7 @@ public static CustomConfig message;
 @Override
 public void onEnable()
 {
-    message = new CustomConfig(this, message); 
+    message = new CustomConfig(this, "message.yml"); 
     message.saveDefault();
 }
 
