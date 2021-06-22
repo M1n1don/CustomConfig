@@ -1,6 +1,7 @@
 # CustomConfig
 コンフィグを生成しやすくする為に作ったutilです。
 
+BungeeCordプラグインで使いたい方は[こちら](https://github.com/M1n1don/CustomConfig-for-BungeeCord)をご覧ください。
 
 ## コンフィグの作成  
 ```java
