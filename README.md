@@ -5,7 +5,7 @@
 ## コンフィグの作成  
 ```java
 
-public static CustomConfig config;
+private CustomConfig config;
 
 @Override
 public void onEnable()
@@ -14,7 +14,7 @@ public void onEnable()
     config.saveDefault();
 }
 
-public static CustomConfig getCustomConfig()
+public CustomConfig getCustomConfig()
 {
     return config;
 }
@@ -25,7 +25,7 @@ public static CustomConfig getCustomConfig()
 ## 他コンフィグの作成（例）  
 ```java
 
-public static CustomConfig message;
+private CustomConfig message;
 
 @Override
 public void onEnable()
@@ -34,7 +34,7 @@ public void onEnable()
     message.saveDefault();
 }
 
-public static CustomConfig getCustomMessage()
+public CustomConfig getCustomMessage()
 {
     return message;
 }
